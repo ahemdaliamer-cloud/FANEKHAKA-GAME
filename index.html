@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="logo.png">
+<title>FANEKHAKA GAMES</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+
+    <div class="logo">
+        <h1>BLOCK</h1>
+        <h2>BUSTER</h2>
+        <p>Puzzle</p>
+    </div>
+
+    <div class="loadingBox">
+        <div id="loadingBar"></div>
+    </div>
+
+    <p id="loadingText">Loading... 0%</p>
+
+</div>
+
+<!-- Main Menu -->
+<div id="mainMenu" class="hidden">
+
+    <button id="settingBtn" class="iconBtn">⚙</button>
+
+    <h1 class="gameTitle">Block Buster Puzzle</h1>
+
+    <button id="playBtn" class="menuBtn">▶ PLAY</button>
+
+    <button id="achievementBtn" class="menuBtn">🏆 ACHIEVEMENTS</button>
+
+    <button id="missionBtn" class="menuBtn">🎯 MISSIONS</button>
+
+    <button id="aboutBtn" class="menuBtn">ℹ ABOUT</button>
+    
+    <button id="howBtn" class="menuBtn">
+🎮 HOW TO PLAY
+</button>
+
+<button id="contactBtn" class="menuBtn">
+📩 CONTACT US
+</button>
+
+<button id="termsBtn" class="menuBtn">
+📜 TERMS & CONDITIONS
+</button>
+
+    <button id="privacyBtn" class="menuBtn">📜 PRIVACY POLICY</button>
+    
+<footer>
+
+<p>© 2026 FANEKHAKA GAMES</p>
+
+<button id="footerAbout">About</button>
+<button id="footerPrivacy">Privacy Policy</button>
+<button id="footerTerms">Terms</button>
+<button id="footerContact">Contact</button>
+
+</footer>
+</div>
+
+
+<!-- Achievements Page -->
+
+<div id="achievementPage" class="hidden">
+
+    <h1>🏆 Achievements</h1>
+
+    <div class="achievementItem">
+        🧱 First Line Clear
+        <span id="a1">🔒</span>
+    </div>
+
+
+    <div class="achievementItem">
+        💯 Score Master
+        <span id="a2">🔒</span>
+    </div>
+
+
+    <div class="achievementItem">
+        🔥 Combo Master
+        <span id="a3">🔒</span>
+    </div>
+
+
+    <button id="achievementBackBtn" class="menuBtn">
+        ← BACK
+    </button>
+
+</div>
+
+<!-- Missions Page -->
+
+<div id="missionPage" class="hidden">
+
+    <h1>🎯 Missions</h1>
+
+
+    <div class="missionItem">
+        🧱 Place 50 Blocks
+        <span id="m1">0/50</span>
+    </div>
+
+
+    <div class="missionItem">
+        💯 Reach 1000 Score
+        <span id="m2">0/1000</span>
+    </div>
+
+
+    <div class="missionItem">
+        🔥 Make 5 Combo
+        <span id="m3">0/5</span>
+    </div>
+
+
+    <button id="missionBackBtn" class="menuBtn">
+        ← BACK
+    </button>
+
+</div>
+
+<!-- Settings -->
+<div id="settingsPage" class="hidden">
+
+    <h2>Settings</h2>
+
+    <div class="settingItem">
+        <span>Music</span>
+        <input type="checkbox" id="music" checked>
+    </div>
+
+    <div class="settingItem">
+        <span>Sound</span>
+        <input type="checkbox" id="sound" checked>
+    </div>
+
+    <button id="backBtn" class="menuBtn">← BACK</button>
+
+</div>
+
+
+<!-- About Page -->
+
+<div id="aboutPage" class="hidden">
+
+    <h1 class="pageTitle">ℹ ABOUT</h1>
+
+    <div class="aboutCard">
+
+        <h2>🧱 Block Buster Puzzle</h2>
+
+        <p>
+        A relaxing and challenging block puzzle game.
+        Place blocks, clear lines, create combos and beat your high score.
+        </p>
+
+
+        <div class="aboutSection">
+
+            <h3>🎮 Game</h3>
+
+            <p>
+            Designed to improve logical thinking,
+            planning skills and provide fun entertainment.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>👨‍💻 Developer</h3>
+
+            <p>
+            FANEKHAKA GAMES
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>📱 Version</h3>
+
+            <p>
+            1.0
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button id="aboutBackBtn" class="backBtn">
+        ← BACK
+    </button>
+
+</div>
+
+<!-- Privacy Policy Page -->
+
+<div id="privacyPage" class="hidden">
+
+    <h1 class="pageTitle">🔒 PRIVACY POLICY</h1>
+
+
+    <div class="aboutCard">
+
+        <h2>🧱 Block Buster Puzzle</h2>
+
+
+        <div class="aboutSection">
+
+            <h3>🔐 Your Privacy</h3>
+
+            <p>
+            Block Buster Puzzle respects your privacy.
+            We are committed to protecting your information
+            while providing a fun gaming experience.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>📱 Information Collection</h3>
+
+            <p>
+            This game does not collect personal information
+            such as your name, email address, or location.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>💾 Local Storage</h3>
+
+            <p>
+            Game progress, scores, achievements, coins,
+            and settings may be stored locally on your device.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>📢 Advertisements</h3>
+
+            <p>
+            If advertisements are added in the future,
+            third-party services may use cookies or similar
+            technologies to provide relevant ads.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>👨‍💻 Developer</h3>
+
+            <p>
+            FANEKHAKA GAMES
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>📅 Last Updated</h3>
+
+            <p>
+            July 2026
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button id="privacyBackBtn" class="backBtn">
+        ← BACK
+    </button>
+
+
+</div>
+
+<!-- How To Play Page -->
+
+<div id="howPage" class="hidden">
+
+    <h1 class="pageTitle">🎮 HOW TO PLAY</h1>
+
+
+    <div class="aboutCard">
+
+        <h2>🧱 Block Buster Puzzle</h2>
+
+
+        <div class="aboutSection">
+
+            <h3>1️⃣ Select Block</h3>
+
+            <p>
+            Choose any block from the bottom area.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>2️⃣ Drag & Drop</h3>
+
+            <p>
+            Drag the block and place it on the 8×8 board.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>3️⃣ Clear Lines</h3>
+
+            <p>
+            Complete rows or columns to clear blocks
+            and earn points.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>🔥 Make Combos</h3>
+
+            <p>
+            Clear multiple lines to increase your combo
+            and get bonus score.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>🏆 Goal</h3>
+
+            <p>
+            Place blocks wisely and achieve the highest score.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button id="howBackBtn" class="backBtn">
+        ← BACK
+    </button>
+
+
+</div>
+
+<!-- Contact Us Page -->
+
+<div id="contactPage" class="hidden">
+
+    <h1 class="pageTitle">📩 CONTACT US</h1>
+
+
+    <div class="aboutCard">
+
+        <h2>🧱 Block Buster Puzzle</h2>
+
+
+        <div class="aboutSection">
+
+            <h3>📬 Get In Touch</h3>
+
+            <p>
+            If you have questions, suggestions, or feedback,
+            feel free to contact us.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>👨‍💻 Developer</h3>
+
+            <p>
+            FANEKHAKA GAMES
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>✉ EMAIL</h3>
+
+            <p>
+            ahmedaliamer@gmail.com
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button id="contactBackBtn" class="backBtn">
+        ← BACK
+    </button>
+
+
+</div>
+
+
+
+<!-- Terms & Conditions Page -->
+
+<div id="termsPage" class="hidden">
+
+    <h1 class="pageTitle">📜 TERMS & CONDITIONS</h1>
+
+
+    <div class="aboutCard">
+
+        <h2>🧱 Block Buster Puzzle</h2>
+
+
+        <div class="aboutSection">
+
+            <h3>🎮 Game Usage</h3>
+
+            <p>
+            By using Block Buster Puzzle, you agree to use
+            the game for personal entertainment purposes.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>💾 Game Data</h3>
+
+            <p>
+            Scores, achievements, coins, and settings may be
+            stored locally on your device.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>🔄 Updates</h3>
+
+            <p>
+            We may update the game to improve features,
+            performance, and user experience.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>⚠ Disclaimer</h3>
+
+            <p>
+            We are not responsible for any loss of game data
+            caused by device issues or software problems.
+            </p>
+
+        </div>
+
+
+        <div class="aboutSection">
+
+            <h3>📅 Last Updated</h3>
+
+            <p>
+            July 2026
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button id="termsBackBtn" class="backBtn">
+        ← BACK
+    </button>
+
+
+</div>
+
+<!-- Game -->
+<div id="gameScreen" class="hidden">
+
+    <div class="topBar">
+
+<button id="gameSettingBtn">⚙</button>
+
+        <div class="scoreBox">
+            <span>Score</span>
+            <h2 id="score">0</h2>
+        </div>
+
+        <div class="bestBox">
+            <span>Best</span>
+            <h2 id="best">0</h2>
+        </div>
+
+    </div>
+
+    <div id="board"></div>
+<div id="scorePopup">+100</div>
+    <div id="blocks">
+      
+      <div id="achievementPopup">
+    🏆 Achievement Unlocked!
+</div>
+
+        <div class="slot" id="slot1"></div>
+
+        <div class="slot" id="slot2"></div>
+
+        <div class="slot" id="slot3"></div>
+
+    </div>
+    <br>
+<button id="restartBtn">Restart</button>
+
+
+<div id="gameOverScreen" class="hidden">
+
+    <h1>GAME OVER</h1>
+
+    <h2>Score: <span id="finalScore">0</span></h2>
+
+    <h2>Best: <span id="finalBest">0</span></h2>
+
+<div class="coinBox">
+    <span>Coins</span>
+    <h2 id="coins">🪙 0</h2>
+</div>
+
+    <button id="playAgainBtn">
+        PLAY AGAIN
+    </button>
+
+</div>
+
+<div id="gameMenu" class="hidden">
+
+<h2>Game Menu</h2>
+
+<button id="restartGameBtn">
+🔄 Restart
+</button>
+
+<button id="quitBtn">
+🏠 Quit Game
+</button>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSound">
+    <source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="placeSound">
+    <source src="place.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
